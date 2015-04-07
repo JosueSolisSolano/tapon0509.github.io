@@ -1,0 +1,51 @@
+// Layout
+
+body {
+	width: 100%;
+}
+
+h2 {
+	text-align: center;
+}
+// Layout navegacion principal
+
+header {
+	width: $full;
+	height: 80px;
+	ul {
+		width: 450px;
+	}
+	li {
+		width: 100px;
+		height: 80px;
+		margin: 0 10px;
+	}
+}
+
+// Layout Secciones
+.main,
+.about,
+.skills,
+.portfolio,
+.contact {
+	width: $full;
+}
+
+.main {
+	height: 600px;
+}
+.about {
+	height: 600px;
+}
+
+.skills {
+	height: 500px;
+}
+
+.content {
+	max-width: $max-width;
+	margin: 0 auto;
+	height: auto;
+}
+
+

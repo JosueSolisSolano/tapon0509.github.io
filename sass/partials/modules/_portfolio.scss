@@ -1,0 +1,66 @@
+// Estilos Seccion Portfolio
+
+.portfolio {
+	text-align: center;
+}
+.project {
+	width:200px;
+    height:180px;
+    background: url("../img/demo.jpg") center center;
+    background-size: cover;
+    display: inline-block;
+
+	.overlay {  
+		background:rgba(0,0,0,.75);
+		width: $full;
+        height: $full;
+        top: 0px;
+        text-align:center;
+        opacity:0;
+        -webkit-transition: opacity .25s ease;
+		-moz-transition: opacity .25s ease;
+			h4 {
+				color: $color-base1;
+				line-height: 80px;
+				font-size: 30px;
+				}
+
+			a {
+				color: $color-base1;
+				border: 3px $color-base1 solid;				
+				border-radius: $full;
+				padding: 1px 18px;
+				font-size: 50px;
+				
+				&:hover {
+					text-decoration: none;
+				}
+			}	
+
+		}
+	
+	&:hover .overlay {
+        opacity:1;
+    }	
+}
+
+.more-projects {
+		margin: 3C:\Users\TAPON\Desktop\JOSUE\Portafolio0px;
+		display: inline-block; 
+		font-weight: 700;
+		font-size: 25px;
+		background: $color-base1;
+		color: $color-primario;
+		border: 4px $color-primario solid;
+		padding: 5px 25px;
+
+		&:hover{
+			text-decoration: none;
+			color: $color-base1;
+			background: $color-primario;
+			border: 4px $color-primario solid;
+			-webkit-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.3);
+			-moz-box-shadow:   	4px 4px 3px 0px rgba(0, 0, 0, 0.3);
+			box-shadow:         4px 4px 3px 0px rgba(0, 0, 0, 0.3);
+		}
+}

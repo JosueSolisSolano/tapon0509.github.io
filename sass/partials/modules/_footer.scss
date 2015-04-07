@@ -1,0 +1,29 @@
+// Estilos Footer
+
+footer {
+	background: $color-primario;
+	color: $color-base1;
+	padding-bottom: 30px;
+	.social {
+		max-width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		img {
+			border-radius: 100px;
+			width: 65px;
+			height: 65px;
+			-webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.3);
+			-moz-box-shadow:   	3px 3px 3px 0px rgba(0, 0, 0, 0.3);
+			box-shadow:         3px 3px 3px 0px rgba(0, 0, 0, 0.3);
+
+		}
+		li {
+			display: inline-block;
+			margin: 0 20px;
+		}	
+		a {
+			font-size: 0px;
+		}
+	}
+
+}

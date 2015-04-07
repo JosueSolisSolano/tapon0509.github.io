@@ -1,0 +1,20 @@
+// Estilos navegacion
+
+// Navegacion principal
+
+.main-nav {
+	ul {
+		float: right;
+		text-align: center;
+	}
+	li {
+		display: inline-block;
+		text-align: center;
+		line-height: 75px;
+	}
+	a {
+		color: $color-base1;
+		font-weight: 700;
+		font-size: 20px;
+	}
+}

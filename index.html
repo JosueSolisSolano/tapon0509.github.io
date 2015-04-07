@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Josue Solis</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header>
@@ -10,9 +12,9 @@
 		<!-- main-nav -->
 		<nav class="main-nav">
 			<ul>
-				<li><a href="">Acerca</a></li>
-				<li><a href="">Portafolio</a></li>
-				<li><a href="">Contacto</a></li>
+				<li><a href="#about">Acerca</a></li>
+				<li><a href="#portfolio">Portafolio</a></li>
+				<li><a href="#contact">Contacto</a></li>
 			</ul>
 		</nav>
 		<!-- /main-nav -->
@@ -25,121 +27,107 @@
 	<!-- /main -->
 	
 	<!-- about -->
-	<div class="about">
-		<h2>Acerca de mi</h2>
-		<img src="" alt="">
-		<p>Hola, mi me llamo Josué.</p>
-		<p>Soy Desarrollador de Software y Diseñador web</p>
-		<p>Me encanta la informatica y los video juegos.</p>
-	</div>
+	<section class="about" id="about">
+		<div class="content">
+			<h2>Acerca de mi</h2>
+			<img src="img/demo.jpg" alt="foto">
+			<h3>Hola, me llamo Josué.</h3>
+			<p>Soy Desarrollador de Software y Diseñador web.</p>
+			<p>Me encanta la informatica y los video juegos.</p>
+		</div>
+
+	</section>
 	<!-- /about -->
 
 	<!-- skills -->
-	<div class="skills">
-		<h2>Mis Habilidades</h2>
-		<div class="skills_web">
-			<img src="" alt="">
-			<h3>WEB</h3>
-			<ul>
-				<li>HTML5</li>
-				<li>CSS3</li>
-				<li>Java Script</li>
-			</ul>
+	<section class="skills">
+		<div class="content">
+			<h2>Mis Habilidades</h2>
+			<div class="skills_web">
+				<img src="img/web-icon.jpg" alt="">
+				<h3>Web</h3>
+				<ul>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>Java Script</li>
+				</ul>
+			</div>
+			<div class="skills_program">
+				<img src="img/demo.jpg" alt="">
+				<h3>Programacion</h3>
+				<ul>
+					<li>Java</li>
+					<li>C++</li>
+					<li>Visual .NET</li>
+				</ul>
+			</div>
+			<div class="skills_desing">
+				<img src="img/design-icon.jpg" alt="">
+				<h3>Dise&ntilde;o</h3>
+				<ul>
+					<li>Ilustrador</li>
+					<li>Photoshop</li>
+					<li>&nbsp;</li>
+				</ul>
+			</div>		
 		</div>
-		<div class="skills_program">
-			<img src="" alt="">
-			<h3>PROGRAMACION</h3>
-			<ul>
-				<li>Java</li>
-				<li>C++</li>
-				<li>Visual .NET</li>
-			</ul>
-		</div>
-		<div class="skills-desing">
-			<img src="" alt="">
-			<h3>DISE&Ntilde;O</h3>
-			<ul>
-				<li>Ilustrador</li>
-				<li>Photoshop</li>
-			</ul>
-		</div>		
-	</div>
+	</section>
 	<!-- /skills -->
 
 	<!-- portfolio -->
-	<div class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<h2>Mis Trabajos</h2>
+		<div class="content">
+		
 		<div class="project">
-			<div class="content">
-				<h2>Proyecto 1</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque reprehenderit nihil at, perferendis facere necessitatibus? Laboriosam reiciendis expedita, harum autem mollitia non? Cum, possimus, minima! Accusantium suscipit consectetur aliquam alias!</p>
-				<img src="" alt="">
-				<a href="">Ver más</a>
+			<div class="overlay">
+				<h4>Proyecto 1</h4>
+				<span><a href="Ver proyecto">+</a></span>
 			</div>
 		</div>
 		<div class="project">
-			<div class="content">
-				<h2>Proyecto 2</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque reprehenderit nihil at, perferendis facere necessitatibus? Laboriosam reiciendis expedita, harum autem mollitia non? Cum, possimus, minima! Accusantium suscipit consectetur aliquam alias!</p>
-				<img src="" alt="">
-				<a href="">Ver más</a>
+			<div class="overlay">
+				<h4>Proyecto 2</h4>
+				<span><a href="Ver proyecto">+</a></span>
 			</div>
 		</div>
 		<div class="project">
-			<div class="content">
-				<h2>Proyecto 3</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque reprehenderit nihil at, perferendis facere necessitatibus? Laboriosam reiciendis expedita, harum autem mollitia non? Cum, possimus, minima! Accusantium suscipit consectetur aliquam alias!</p>
-				<img src="" alt="">
-				<a href="">Ver más</a>
+			<div class="overlay">
+				<h4>Proyecto 3</h4>
+				<span><a href="Ver proyecto">+</a></span>
 			</div>
 		</div>
 		<div class="project">
-			<div class="content">
-				<h2>Proyecto 4</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque reprehenderit nihil at, perferendis facere necessitatibus? Laboriosam reiciendis expedita, harum autem mollitia non? Cum, possimus, minima! Accusantium suscipit consectetur aliquam alias!</p>
-				<img src="" alt="">
-				<a href="">Ver más</a>
+			<div class="overlay">
+				<h4>Proyecto 4</h4>
+				<span><a href="Ver proyecto">+</a></span>
 			</div>
 		</div>
-		<div class="project">
-			<div class="content">
-				<h2>Proyecto 5</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque reprehenderit nihil at, perferendis facere necessitatibus? Laboriosam reiciendis expedita, harum autem mollitia non? Cum, possimus, minima! Accusantium suscipit consectetur aliquam alias!</p>
-				<img src="" alt="">
-				<a href="">Ver más</a>
-			</div>
+
+		<a class="more-projects" href="">Ver todos proyectos</a>
 		</div>
-		<div class="project">
-			<div class="content">
-				<h2>Proyecto 6</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque reprehenderit nihil at, perferendis facere necessitatibus? Laboriosam reiciendis expedita, harum autem mollitia non? Cum, possimus, minima! Accusantium suscipit consectetur aliquam alias!</p>
-				<img src="" alt="">
-				<a href="">Ver más</a>
-			</div>
-		</div>
-		<a href="">Ver más proyectos</a>
+		
 	</div>
 	<!-- /portfolio -->
 	
 	<!-- contact -->
-	<div class="contact">
+	<div class="contact" id="contact">
 		<h2>Contactame</h2>
-		<form >	
+		<form>	
 			<input type="text" placeholder="Nombre">
 			<input type="email" placeholder="Correo Electronico">
 			<textarea placeholder="Mensaje"></textarea>
 			<button type="submit">Enviar</button>
 		</form>
-	</div>
+	</section>
 	<!-- /contact -->
 
 	<footer>
 		<h2>Buscame en</h2>
 		<ul class="social">
-			<li><img src="" alt=""><a href="">Facebook</a></img></li>
-			<li><img src="" alt=""><a href="">Twitter</a></img></li>
-			<li><img src="" alt=""><a href="">Github</a></img></li>
-			<li><img src="" alt=""><a href="">Behance</a></img></li>
+			<li><a href=""><img src="img/facebook-icon.jpg" alt="facebook">Facebook</a></img></li>
+			<li><a href=""><img src="img/twitter-icon.jpg" alt="twitter">Twitter</a></img></li>
+			<li><a href=""><img src="img/github-icon.jpg" alt="github">Github</a></img></li>
 		</ul>
 	</footer>
 </body>
