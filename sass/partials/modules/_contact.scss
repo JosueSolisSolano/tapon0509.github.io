@@ -1,0 +1,68 @@
+// Estilos Seccion Contact
+
+// Placeholders
+%input {
+	border: none;
+	background: $color-base1;
+	margin: 10px 0;
+	font-weight: 700;
+	font-size: 25px;
+	padding: 1px 15px;
+	width: $full;
+}
+
+%placeholder {
+	&::-webkit-input-placeholder {
+		color: $color-secundario;
+	}
+	&:-moz-placeholder { 
+		color: $color-secundario;
+	}
+	&::-moz-placeholder { 
+		color: $color-secundario;
+	}
+	&:-ms-input-placeholder {  
+		color: $color-secundario;
+	}	
+}
+
+.contact {
+	background: $color-primario;
+	color: $color-base1;
+	text-align: center;
+	form {
+		margin: 0 auto;
+		width: 35%;
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		height: 40px; 
+		@extend %input;
+		@extend %placeholder;
+	}
+
+	textarea {
+		height: 150px;
+		@extend %input;
+		@extend %placeholder;
+	}
+
+	button {
+		font-weight: 700;
+		font-size: 25px;
+		color: $color-base1;
+		background: transparent;
+		border: 4px $color-base1 solid;
+		padding: 5px 25px;
+
+		&:hover{
+			background: $color-base1;
+			color: $color-primario;
+			-webkit-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.3);
+			-moz-box-shadow:   	4px 4px 3px 0px rgba(0, 0, 0, 0.3);
+			box-shadow:         4px 4px 3px 0px rgba(0, 0, 0, 0.3);
+
+		}
+	}
+}
