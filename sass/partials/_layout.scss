@@ -10,15 +10,15 @@ h2 {
 // Layout navegacion principal
 
 header {
-	width: $full;
 	height: 80px;
+	width: $full;
 	ul {
 		width: 450px;
 	}
 	li {
-		width: 100px;
 		height: 80px;
 		margin: 0 10px;
+		width: 100px;
 	}
 }
 
@@ -39,13 +39,17 @@ header {
 }
 
 .skills {
+	height: 550px;
+}
+
+.portfolio {
 	height: 500px;
 }
 
 .content {
-	max-width: $max-width;
-	margin: 0 auto;
 	height: auto;
+	margin: 0 auto;
+	max-width: $max-width;
 }
 
 

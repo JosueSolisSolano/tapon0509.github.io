@@ -9,12 +9,12 @@
 	}
 	li {
 		display: inline-block;
-		text-align: center;
 		line-height: 75px;
+		text-align: center;
 	}
 	a {
+		@include font-size(14);
 		color: $color-base1;
 		font-weight: 700;
-		font-size: 20px;
 	}
 }

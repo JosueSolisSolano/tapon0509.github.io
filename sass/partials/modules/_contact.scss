@@ -2,11 +2,11 @@
 
 // Placeholders
 %input {
-	border: none;
+	@include font-size(16);
 	background: $color-base1;
-	margin: 10px 0;
+	border: none;
 	font-weight: 700;
-	font-size: 25px;
+	margin: 10px 0;
 	padding: 1px 15px;
 	width: $full;
 }
@@ -30,6 +30,9 @@
 	background: $color-primario;
 	color: $color-base1;
 	text-align: center;
+	h2 {
+		color: $color-base1;
+	}
 	form {
 		margin: 0 auto;
 		width: 35%;
@@ -37,31 +40,33 @@
 
 	input[type="text"],
 	input[type="email"] {
-		height: 40px; 
 		@extend %input;
 		@extend %placeholder;
+		height: 40px; 
 	}
 
 	textarea {
-		height: 150px;
 		@extend %input;
 		@extend %placeholder;
+		height: 150px;
+		padding: 8px 15px;
+		font-family: 'Roboto', sans-serif;
 	}
 
 	button {
-		font-weight: 700;
-		font-size: 25px;
-		color: $color-base1;
+		@include font-size(18);
 		background: transparent;
 		border: 4px $color-base1 solid;
+		color: $color-base1;
+		font-weight: 700;
 		padding: 5px 25px;
 
 		&:hover{
+			-moz-box-shadow:   	4px 4px 3px 0px rgba(0, 0, 0, 0.3);
+			-webkit-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.3);
+			box-shadow:         4px 4px 3px 0px rgba(0, 0, 0, 0.3);
 			background: $color-base1;
 			color: $color-primario;
-			-webkit-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.3);
-			-moz-box-shadow:   	4px 4px 3px 0px rgba(0, 0, 0, 0.3);
-			box-shadow:         4px 4px 3px 0px rgba(0, 0, 0, 0.3);
 
 		}
 	}

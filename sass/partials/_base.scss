@@ -5,26 +5,26 @@ body {
 }
 
 h1 {
-	position: absolute;
-	height: 80px;
-	line-height: 70px;
-	left: 20px;
 	color: $color-base1;
+	height: 80px;
+	left: 20px;
+	line-height: 70px;
+	position: absolute;
 }
 
 h2 {
-	padding: 50px 0 40px 0;
+	@include font-size(34);
 	font-weight: 900;
-	font-size: 40px;
-	text-transform: uppercase;
+	padding: 50px 0 40px 0;
+	text-transform: capitalize;
 }
 
 header {
-	position: fixed;
+	-moz-box-shadow:    0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+	box-shadow:         0px 2px 3px 0px rgba(0, 0, 0, 0.3);
 	background: $color-primario;
 	overflow: hidden;
-	-webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow:    0px 2px 3px 0px rgba(0, 0, 0, 0.3);
-	box-shadow:         0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+	position: fixed;
 }
 

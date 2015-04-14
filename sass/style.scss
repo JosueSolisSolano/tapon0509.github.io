@@ -4,14 +4,19 @@
 
 // Partials
 @import "partials/variables";
-@import "partials/reset";
+@import "partials/mixins";
 @import "partials/layout";
+@import "partials/reset";
 @import "partials/base";
 
+
+
+
 // Modules
-@import "partials/modules/navigation";
 @import "partials/modules/about";
-@import "partials/modules/skills";
-@import "partials/modules/portfolio";
 @import "partials/modules/contact";
 @import "partials/modules/footer";
+@import "partials/modules/main";
+@import "partials/modules/navigation";
+@import "partials/modules/portfolio";
+@import "partials/modules/skills";

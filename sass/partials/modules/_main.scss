@@ -1,0 +1,18 @@
+// EStilos Seccion Principal
+.main {
+	h2 {
+		color: $color-primario;
+		padding: 100px 0 20px 0;
+	}
+	h3 {
+		@include font-size(20);
+		color: $color-primario;
+		font-weight: 400;
+		text-align: center;
+	}
+	span {
+		display: inherit;
+		font-weight: 400;
+		text-align: center;
+	}
+}
