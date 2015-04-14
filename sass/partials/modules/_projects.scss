@@ -1,0 +1,40 @@
+// Estilos de los proyectos
+
+.description {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center; 
+	h2 {
+		color: $color-primario;
+	}
+	p {
+		width: 80%;
+		margin: 0 auto;
+	}
+	img {
+		width: 70%;
+		height: 500px;
+		margin: 20px auto;
+		display: inherit;
+	}
+	a {
+		@include font-size(16);
+		background: $color-base1;
+		border: 4px $color-primario solid;
+		color: $color-primario;
+		font-weight: 700;
+		padding: 5px 25px;
+		text-align: center;
+
+		&:hover {
+			-moz-box-shadow:   	4px 4px 3px 0px rgba(0, 0, 0, 0.3);
+			-webkit-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.3);
+			box-shadow:         4px 4px 3px 0px rgba(0, 0, 0, 0.3);
+			background: $color-primario;
+			border: 4px $color-primario solid;
+			color: $color-base1;
+			text-decoration: none;
+		}
+	}
+
+}

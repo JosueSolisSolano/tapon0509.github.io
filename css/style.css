@@ -286,4 +286,35 @@ footer {
     font-size: 1.4rem;
     font-weight: 400; }
 
+.description {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center; }
+  .description h2 {
+    color: #F65810; }
+  .description p {
+    width: 80%;
+    margin: 0 auto; }
+  .description img {
+    width: 70%;
+    height: 500px;
+    margin: 20px auto;
+    display: inherit; }
+  .description a {
+    font-size: 1.6rem;
+    background: #fff;
+    border: 4px #F65810 solid;
+    color: #F65810;
+    font-weight: 700;
+    padding: 5px 25px;
+    text-align: center; }
+    .description a:hover {
+      -moz-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.3);
+      background: #F65810;
+      border: 4px #F65810 solid;
+      color: #fff;
+      text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */
