@@ -1,8 +1,10 @@
 // EStilos Seccion Principal
 .main {
+	border-bottom: 1px solid;
 	h2 {
 		color: $color-primario;
-		padding: 100px 0 20px 0;
+		padding: 250px 0 20px 0;
+
 	}
 	h3 {
 		@include font-size(20);

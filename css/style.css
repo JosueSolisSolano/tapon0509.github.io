@@ -31,7 +31,7 @@ header {
   height: 550px; }
 
 .portfolio {
-  height: 500px; }
+  height: auto; }
 
 .content {
   height: auto;
@@ -69,12 +69,12 @@ header {
   -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
-  background: #F65810;
+  background: #204B96;
   overflow: hidden;
   position: fixed; }
 
 .about h2 {
-  color: #F65810; }
+  color: #204B96; }
 .about img {
   float: left;
   width: 30%;
@@ -111,7 +111,7 @@ header {
   color: #B3B4B4; }
 
 .contact {
-  background: #F65810;
+  background: #204B96;
   color: #fff;
   text-align: center; }
   .contact h2 {
@@ -138,10 +138,10 @@ header {
       -webkit-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.3);
       box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.3);
       background: #fff;
-      color: #F65810; }
+      color: #204B96; }
 
 footer {
-  background: #F65810;
+  background: #204B96;
   color: #fff;
   padding-bottom: 30px; }
   footer .social {
@@ -163,18 +163,20 @@ footer {
       white-space: nowrap;
       overflow: hidden; }
 
-.main h2 {
-  color: #F65810;
-  padding: 100px 0 20px 0; }
-.main h3 {
-  font-size: 2rem;
-  color: #F65810;
-  font-weight: 400;
-  text-align: center; }
-.main span {
-  display: inherit;
-  font-weight: 400;
-  text-align: center; }
+.main {
+  border-bottom: 1px solid; }
+  .main h2 {
+    color: #204B96;
+    padding: 250px 0 20px 0; }
+  .main h3 {
+    font-size: 2rem;
+    color: #204B96;
+    font-weight: 400;
+    text-align: center; }
+  .main span {
+    display: inherit;
+    font-weight: 400;
+    text-align: center; }
 
 .main-nav ul {
   float: right;
@@ -192,41 +194,98 @@ footer {
   background: #fff;
   text-align: center; }
   .portfolio h2 {
-    color: #F65810; }
+    color: #204B96; }
 
 .project {
   width: 200px;
-  background: url("../img/demo.jpg") center center;
-  background-size: cover;
   display: inline-block;
-  height: 180px;
-  margin: 0 5px; }
+  height: 200px;
+  margin: 5px 5px; }
+  .project .imagen {
+    width: 200px;
+    height: 200px; }
   .project .overlay {
     -moz-transition: opacity .50s ease;
     -webkit-transition: opacity .50s ease;
     background: rgba(0, 0, 0, 0.75);
-    width: 100%;
-    height: 100%;
     opacity: 0;
     text-align: center;
-    top: 0px; }
+    position: absolute;
+    overflow: hidden;
+    width: 200px;
+    height: 200px; }
     .project .overlay h4 {
       font-size: 2rem;
       color: #fff;
       line-height: 80px; }
-    .project .overlay a img {
+    .project .overlay a .plus {
       width: 60px;
       height: 60px; }
     .project .overlay a:hover {
       text-decoration: none; }
   .project:hover .overlay {
     opacity: 1; }
+  .project .overlay_modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none; }
+    .project .overlay_modal:target {
+      opacity: 1;
+      pointer-events: auto; }
+  .project .modalbox {
+    top: 20px;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in; }
+    .project .modalbox h2, .project .modalbox p, .project .modalbox a {
+      padding: 10px; }
+    .project .modalbox a {
+      display: block;
+      margin: 0 auto;
+      color: #204B96; }
+      .project .modalbox a:hover {
+        text-decoration: underline; }
+    .project .modalbox img {
+      width: 800px;
+      height: 400px; }
+  .project .close {
+    color: #000;
+    line-height: 25px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 10px;
+    width: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 3px; }
+    .project .close:hover {
+      background: #000;
+      color: #fff;
+      text-decoration: none; }
 
 .more-projects {
   font-size: 1.6rem;
   background: #fff;
-  border: 4px #F65810 solid;
-  color: #F65810;
+  border: 4px #204B96 solid;
+  color: #204B96;
   display: inline-block;
   font-weight: 700;
   margin: 30px;
@@ -236,13 +295,13 @@ footer {
     -moz-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.3);
-    background: #F65810;
-    border: 4px #F65810 solid;
+    background: #204B96;
+    border: 4px #204B96 solid;
     color: #fff;
     text-decoration: none; }
 
 .skills {
-  background: #F65810;
+  background: #204B96;
   color: #fff;
   margin: 0 auto;
   text-align: center; }
@@ -291,7 +350,7 @@ footer {
   margin: 0 auto;
   text-align: center; }
   .description h2 {
-    color: #F65810; }
+    color: #204B96; }
   .description p {
     width: 80%;
     margin: 0 auto; }
@@ -303,8 +362,8 @@ footer {
   .description a {
     font-size: 1.6rem;
     background: #fff;
-    border: 4px #F65810 solid;
-    color: #F65810;
+    border: 4px #204B96 solid;
+    color: #204B96;
     font-weight: 700;
     padding: 5px 25px;
     text-align: center; }
@@ -312,8 +371,8 @@ footer {
       -moz-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.3);
       -webkit-box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.3);
       box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.3);
-      background: #F65810;
-      border: 4px #F65810 solid;
+      background: #204B96;
+      border: 4px #204B96 solid;
       color: #fff;
       text-decoration: none; }
 

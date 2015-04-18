@@ -1,8 +1,42 @@
 [
 	{
-		"name":"Proyecto 1",
-		"descripcion":"blablablablablablablablablablablablablablablablablablablablablablablabla",
-		"imagen" : "img/demo.jpg"
+		"name":"Coca Cola",
+		"imagen" : "img/coca_cola.jpg",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsum sunt magni illo dignissimos magnam delectus itaque earum sit dolorum hic, error ex? Sunt, dicta. Perspiciatis sunt provident voluptates, blanditiis."
+	},
+	{
+		"name":"La Iluminada",
+		"imagen" : "img/la_iluminada.jpg",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsum sunt magni illo dignissimos magnam delectus itaque earum sit dolorum hic, error ex? Sunt, dicta. Perspiciatis sunt provident voluptates, blanditiis."
+	},
+	{
+		"name":"Ak6+1",
+		"imagen" : "img/the_last_activist.jpg",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsum sunt magni illo dignissimos magnam delectus itaque earum sit dolorum hic, error ex? Sunt, dicta. Perspiciatis sunt provident voluptates, blanditiis."
+	},
+	{
+		"name":"Proyecto 4",
+		"imagen" : "img/demo.jpg",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsum sunt magni illo dignissimos magnam delectus itaque earum sit dolorum hic, error ex? Sunt, dicta. Perspiciatis sunt provident voluptates, blanditiis."
+	},
+	{
+		"name":"Proyecto 5",
+		"imagen" : "img/demo.jpg",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsum sunt magni illo dignissimos magnam delectus itaque earum sit dolorum hic, error ex? Sunt, dicta. Perspiciatis sunt provident voluptates, blanditiis."
+	},
+	{
+		"name":"Proyecto 6",
+		"imagen" : "img/demo.jpg",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsum sunt magni illo dignissimos magnam delectus itaque earum sit dolorum hic, error ex? Sunt, dicta. Perspiciatis sunt provident voluptates, blanditiis."
+	},	
+	{
+		"name":"Proyecto 7",
+		"imagen" : "img/demo.jpg",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsum sunt magni illo dignissimos magnam delectus itaque earum sit dolorum hic, error ex? Sunt, dicta. Perspiciatis sunt provident voluptates, blanditiis."
+	},
+	{
+		"name":"Proyecto 8",
+		"imagen" : "img/demo.jpg",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsum sunt magni illo dignissimos magnam delectus itaque earum sit dolorum hic, error ex? Sunt, dicta. Perspiciatis sunt provident voluptates, blanditiis."
 	}
-
 ]

@@ -9,22 +9,25 @@
 }
 .project {
 	width: 200px;
-
-    background: url("../img/demo.jpg") center center;
-    background-size: cover;
     display: inline-block;
-    height: 180px;
-    margin: 0 5px;
+    height: 200px;
+	margin: 5px 5px;
+
+	.imagen{
+    	width: 200px;
+    	height: 200px;
+	}
 
 	.overlay {  
 		-moz-transition: opacity .50s ease;	
 		-webkit-transition: opacity .50s ease;
 		background:rgba(0,0,0,.75);
-		width: $full;
-        height: $full;
         opacity:0;
         text-align:center;
-        top: 0px;
+        position: absolute;
+        overflow: hidden;
+        width: 200px;
+        height: 200px;
 			h4 {
 				@include font-size(20);
 				color: $color-base1;
@@ -32,7 +35,7 @@
 				}
 
 			a {		
-				img {
+				.plus{
 					width: 60px;
 					height: 60px;
 				}
@@ -46,6 +49,72 @@
 	&:hover .overlay {
         opacity:1;
     }	
+    .overlay_modal {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		opacity:0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	    &:target {
+			opacity:1;
+			pointer-events: auto;
+    	}
+	}
+	.modalbox{
+		h2, p, a {
+			padding: 10px;
+		}
+		a {
+			display: block;
+			margin: 0 auto;
+			color: $color-primario; 
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		img {
+			width: 800px;
+			height: 400px;
+		}
+		top: 20px;
+	  	margin: 0 auto;
+	  	text-align: center;
+		width: 80%;
+		position: relative;
+		padding: 5px 20px 13px 20px;
+		background: #fff;
+		border-radius:3px;
+		-webkit-transition: all 500ms ease-in;
+		-moz-transition: all 500ms ease-in;
+		transition: all 500ms ease-in;
+	}
+	.close {
+		color: #000;
+		line-height: 25px;
+		position: absolute;
+		right: 10px;
+		text-align: center;
+		top: 10px;
+		width: 40px;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 20px;
+		border-radius:3px;
+		&:hover { 
+			background: #000; 
+			color:#fff;
+			text-decoration: none;
+		}
+	}
+
+
 }
 
 .more-projects {

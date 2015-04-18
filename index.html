@@ -84,45 +84,29 @@
 		<h2>Mis Trabajos</h2>
 		<div class="content">
 		
-		<div class="project">
+		<!-- <div class="project">
 			<div class="overlay">
 				<h4>Proyecto 1</h4>
 				<span><a href="projects.html"><img src="img/plus.png"></a></span>
 			</div>
-		</div>
-		<div class="project">
-			<div class="overlay">
-				<h4>Proyecto 2</h4>
-				<span><a href="projects.html"><img src="img/plus.png"></a></span>
-			</div>
-		</div>
-		<div class="project">
-			<div class="overlay">
-				<h4>Proyecto 3</h4>
-				<span><a href="projects.html"><img src="img/plus.png"></a></span>
-			</div>
-		</div>
-		<div class="project">
-			<div class="overlay">
-				<h4>Proyecto 4</h4>
-				<span><a href="projects.html"><img src="img/plus.png"></a></span>
-			</div>
-		</div>
+		</div> -->
 
-		<a class="more-projects" href="">Ver todos proyectos</a>
 		</div>
-		
+		<a class="more-projects" href="">Ver todos proyectos</a>
 	</section>
 	<!-- /portfolio -->
 	
 	<!-- contact -->
 	<section class="contact" id="contact">
 		<h2>Contactame</h2>
-		<form>	
-			<input type="text" placeholder="Nombre">
-			<input type="email" placeholder="Correo Electronico">
-			<textarea placeholder="Mensaje"></textarea>
-			<button type="submit">Enviar</button>
+		<form method="post" action="" id="contact_form">	
+			<input id="nombre" type="text" placeholder="Nombre">
+			<span id="nombre_error"></span>
+			<input id="email" type="email" placeholder="Correo Electronico">
+			<span id="email_error"></span>
+			<textarea id="msj" placeholder="Mensaje"></textarea>
+			<span id="msj_error"></span>
+			<button id="submit_validar" type="button">Enviar</button>
 		</form>
 	</section>
 	<!-- /contact -->
